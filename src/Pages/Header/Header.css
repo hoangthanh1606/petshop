@@ -1,0 +1,66 @@
+.nav {
+  padding: 1.2rem 0;
+  background-color: #fff;
+  color: black;
+  box-shadow: 1px 3px 6px #9e9494;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  display: block;
+  margin-right: 2.5rem;
+  cursor: pointer;
+  background-color: #fbddb0;
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+.nav-link:hover {
+  background-color: #f9cc87;
+}
+
+.icon {
+  font-size: 3rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.cart-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .cart-icon {
+    display: block;
+    font-size: 3rem;
+  }
+  .hamburger {
+    display: block;
+    font-size: 3rem;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  .icon {
+    display: none;
+  }
+}
