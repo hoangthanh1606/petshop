@@ -68,7 +68,13 @@ const ListAnimal = (props) => {
           ))}
         </div>
       </section>
-      {animalList.length === 0 && (<Message type='warning' message={`Fetch data Petfinder is 429 status error`}/>)}
+      {animalList.length === 0 && (
+        <Image
+          className="animal-load"
+          src="https://cdn0.fahasa.com/media/theme/default/loader.gif"
+          alt="loading"
+        />
+      )}
       {animalList.length > 0 && (
         <section className="pagination">
           <div className=" container">
